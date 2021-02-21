@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bar3_3" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="34dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/ic_pause_circle_gray"
+        android:onClick="@android:string/VideoView_error_text_invalid_progressive_playback"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/pesma"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="Pesma"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/pesma"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_tune_orange" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Pevac"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/pesma" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/ic_play_circle_gray"
+        android:onClick="@android:string/VideoView_error_text_invalid_progressive_playback"
+        app:layout_constraintEnd_toStartOf="@+id/pause"
+        app:layout_constraintStart_toEndOf="@+id/pesma"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="400dp"
+        android:layout_height="97dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:saveEnabled="false"
+            android:scrollbars="horizontal">
+
+            <Button
+                android:id="@+id/radio"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/slika1"
+                android:gravity="bottom|center"
+                android:text="Radio 1" />
+
+            <Button
+                android:id="@+id/radio2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/slika5"
+                android:gravity="bottom|center"
+                android:text="Radio 2"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="504dp" />
+
+            <Button
+                android:id="@+id/radio3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/slika7"
+                android:gravity="bottom|center"
+                android:text="Radio 3"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="504dp" />
+
+            <Button
+                android:id="@+id/radio4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/slika8"
+                android:gravity="bottom|center"
+                android:text="Radio 4"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="504dp" />
+
+            <Button
+                android:id="@+id/radio5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/slika4"
+                android:gravity="bottom|center"
+                android:text="Radio 5"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="504dp" />
+
+            <Button
+                android:id="@+id/radio6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/slika2"
+                android:gravity="bottom|center"
+                android:text="Radio 6"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="504dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/stanica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="113dp"
+        android:text="Radio Stanica"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="260dp"
+        android:text="Slične stanice :"
+        android:textColor="#272727"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/side"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_format_align_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Sledeće pesme :"
+        android:textColor="#272727"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="393dp"
+        android:layout_height="369dp"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/pesme1" />
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="Dakiti \nBad Bunny n Jhay Cortez"
+                    android:textAlignment="gravity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:alpha="1"
+                    android:capitalize="characters"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="3:15"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3sd"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/pesme4" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="195dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="Willow \nTaylor Swift"
+                    android:textAlignment="gravity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:alpha="1"
+                    android:capitalize="characters"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="3:55"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/pesme6" />
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="Drivers License  \nOlivia Rodrigo"
+                    android:textAlignment="gravity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:alpha="1"
+                    android:capitalize="characters"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="4:10"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/pesme3" />
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="Positions \nAriana Grande"
+                    android:textAlignment="gravity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:alpha="1"
+                    android:capitalize="characters"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="3:23"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/pesme5" />
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:singleLine="false"
+                    android:text="Blinding Lights \nThe Weeknd"
+                    android:textAlignment="gravity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textIsSelectable="false" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:alpha="1"
+                    android:capitalize="characters"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="4:35"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
