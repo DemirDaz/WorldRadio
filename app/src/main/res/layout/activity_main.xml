@@ -237,10 +237,11 @@
                     android:layout_gravity="center"
                     android:layout_weight="0"
                     android:singleLine="false"
-                    android:text="Dakiti \nBad Bunny n Jhay Cortez"
+                    android:text="Dakiti \nBad Bunny ft Jhay"
                     android:textAlignment="gravity"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textIsSelectable="false" />
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="93dp"
@@ -276,7 +277,8 @@
                     android:text="Willow \nTaylor Swift"
                     android:textAlignment="gravity"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textIsSelectable="false" />
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="93dp"
@@ -310,7 +312,8 @@
                     android:text="Drivers License  \nOlivia Rodrigo"
                     android:textAlignment="gravity"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textIsSelectable="false" />
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="93dp"
@@ -344,7 +347,8 @@
                     android:text="Positions \nAriana Grande"
                     android:textAlignment="gravity"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textIsSelectable="false" />
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="93dp"
@@ -378,7 +382,8 @@
                     android:text="Blinding Lights \nThe Weeknd"
                     android:textAlignment="gravity"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textIsSelectable="false" />
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textView5"
