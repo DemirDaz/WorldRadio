@@ -8,8 +8,11 @@
 
     <TextView
         android:id="@+id/pesma2"
-        android:layout_width="134dp"
-        android:layout_height="50dp"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
         android:layout_marginStart="31dp"
         android:layout_marginBottom="58dp"
         android:text="Pesma"
@@ -19,9 +22,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/pevac2"
+        android:layout_width="138dp"
+        android:layout_height="22dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
         android:layout_marginStart="31dp"
         android:layout_marginBottom="10dp"
         android:text="Pevac"
@@ -43,12 +49,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="57dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="205dp"
-        android:layout_marginTop="53dp"
-        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:id="@+id/back"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ic_panorama_fish_eye_black_24dp"
+        android:foreground="@drawable/ic_chevron_left_black_24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,6 +98,28 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_width="420dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="-99dp"
+                tools:layout_editor_absoluteY="522dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sve radio stanice"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="414dp"
                 android:layout_height="50dp"
                 android:orientation="horizontal">
@@ -105,28 +134,6 @@
                     android:layout_width="133dp"
                     android:layout_height="wrap_content"
                     android:text="Moje omiljene"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="420dp"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="-99dp"
-                tools:layout_editor_absoluteY="522dp">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="40dp"
-                    app:srcCompat="@drawable/ic_dashboard_black_24dp" />
-
-                <TextView
-                    android:layout_width="133dp"
-                    android:layout_height="wrap_content"
-                    android:text="Sve radio stanice"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
